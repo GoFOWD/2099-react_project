@@ -1,12 +1,21 @@
-# React + Vite
+# 주석 다는 방법 (JSDoc 방식)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. 컴포넌트를 만든다
+2. 컴포넌트에 사용할 파라미터를 만든다
+3. 해당 컴포넌트 위에 /\*\* \*/ 주석을 만들면 자동으로 설명을 채우라고 나온다
+4. 컴포넌트를 만든 의도가 잘 담기게 설명을 작성해 주시면 됩니다!
 
-Currently, two official plugins are available:
+_예시_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+/\*\*  
+두 숫자를 더하는 함수 입니다.  
+@param {number} a - 첫 번째 숫자  
+@param {number} b - 두 번째 숫자  
+@returns {number} 두 숫자의 합  
+\*/
 
-## Expanding the ESLint configuration
+function add(a, b){
+return a + b;
+}
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 테일윈드CSS
