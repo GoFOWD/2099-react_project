@@ -8,14 +8,15 @@
 _예시_
 
 /\*\*  
-두 숫자를 더하는 함수 입니다.  
-@param {number} a - 첫 번째 숫자  
-@param {number} b - 두 번째 숫자  
-@returns {number} 두 숫자의 합  
-\*/
-
-function add(a, b){
-return a + b;
-}
+ \* 버튼 컴포넌트 입니다  
+ \* @param label - 버튼에 표시할 텍스트  
+ \* @param onClick - 클릭 이벤트 핸들러  
+ \* @param disabled - 비활성화 여부  
+ \*/  
+const Button = ({ label, onClick, disabled }) => (  
+\<button onClick={onClick} disabled={disabled}>  
+{label}  
+\</button>  
+);
 
 # 테일윈드CSS
